@@ -26,6 +26,8 @@ Bring up your new box.
 
 	vagrant up
 
+Install the themes you want to work on in the /themes folder.
+
 Visit your site via IP to complete your install: [http://192.168.33.20](http://192.168.33.20)
 
 
@@ -33,17 +35,6 @@ Advice
 ------
 
 What will really make this work for you is tinkering in the `Vagrantfile` definition to meet your development needs. I've made a few changes and additions to the defaults for our specific case of WordPress development.
-
-### Base Box
-
-To get you up and running quickly, I've specified a base box based on the 32-bit Ubuntu 10.04 version provided by the Vagrant site. If you're comfortable with Vagrant, by all means, provide your own! Here's the relevant lines:
-
-	# Every Vagrant virtual environment requires a box to build off of.
-	config.vm.box = "lucid32"
-
-	# The url from where the 'config.vm.box' box will be fetched if it
-	# doesn't already exist on the user's system.
-	config.vm.box_url = "http://files.vagrantup.com/lucid32.box"
 
 ### Access
 
