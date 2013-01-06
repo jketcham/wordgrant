@@ -1,7 +1,7 @@
 Description
 ===========
 
-A Virtualbox / Vagrant / Librarian / Chef setup for WordPress development. 
+A Virtualbox / Vagrant / Librarian / Chef setup for WordPress development forked from [wordpress-vagrant](https://github.com/lewg/wordpress-vagrant)
 
 
 Requirements
@@ -64,7 +64,7 @@ I've put commented lines in there for mapping folders into both the plugins and 
 
 ### WordPress.org Plugin and Themes
 
-You can specify a list of plugins to automatically when the VM comes up. Debug Bar is in there as a default (you are using this for development, right?) but you can add and remove to match your setup. By default, just given a name, the defintion will attempt to guess the path to the plugin (on plugins.trac.wordpress.org) by replacing all the spaces with dashes, and removing some punctutation. Additionally, it will pull the latest version of the plugin based off the information provided by the plugin's readme.txt file. However, both the path and tag can be overridden ('trunk' being a special case, and choosing the trunk of the repository over a tag) The relevant lines in `Vagrantfile`: 
+You can specify a list of plugins to automatically when the VM comes up. Debug Bar is in there as a default (you are using this for development, right?) but you can add and remove to match your setup. By default, just given a name, the defintion will attempt to guess the path to the plugin (on plugins.trac.wordpress.org) by replacing all the spaces with dashes, and removing some punctutation. Additionally, it will pull the latest version of the plugin based off the information provided by the plugin's readme.txt file. However, both the path and tag can be overridden ('trunk' being a special case, and choosing the trunk of the repository over a tag) The relevant lines in `Vagrantfile`:
 
     # Include the list of plugins you'd like installed
     "org_plugins" => {
